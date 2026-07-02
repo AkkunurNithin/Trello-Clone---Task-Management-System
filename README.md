@@ -1,4 +1,4 @@
-# 📋 TaskFlow - Task Management System
+# 📋 Trello Clone - Task Management System
 
 A modern **Trello-inspired Task Management System** built using **HTML5, CSS3, and JavaScript**. TaskFlow helps users organize their daily tasks using a simple Kanban board interface with drag-and-drop functionality, search, dark mode, and local storage support.
 
@@ -20,23 +20,6 @@ A modern **Trello-inspired Task Management System** built using **HTML5, CSS3, a
 
 ---
 
-## 📸 Screenshots
-
-> Add your screenshots here after uploading them.
-
-### Dashboard
-
-![Dashboard](assets/dashboard.png)
-
-### Dark Mode
-
-![Dark Mode](assets/darkmode.png)
-
-### Add Task
-
-![Add Task](assets/addtask.png)
-
----
 
 ## 🛠️ Technologies Used
 
