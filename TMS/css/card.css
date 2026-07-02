@@ -1,0 +1,281 @@
+/* =========================
+   Task Card
+========================= */
+
+.card{
+    background:#fff;
+    border-radius:12px;
+    padding:15px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    cursor:grab;
+    box-shadow:0 3px 8px rgba(0,0,0,.08);
+    transition:.3s;
+    border-left:5px solid #3b82f6;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
+}
+
+.card:active{
+    cursor:grabbing;
+}
+
+/* =========================
+   Card Header
+========================= */
+
+.card-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.card-title{
+    font-size:17px;
+    font-weight:600;
+    color:#1f2937;
+    word-break:break-word;
+}
+
+/* =========================
+   Card Description
+========================= */
+
+.card-description{
+    font-size:14px;
+    color:#6b7280;
+    line-height:1.6;
+    word-break:break-word;
+}
+
+/* =========================
+   Due Date
+========================= */
+
+.card-date{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:13px;
+    color:#475569;
+}
+
+.card-date i{
+    color:#3b82f6;
+}
+
+/* =========================
+   Priority Badge
+========================= */
+
+.priority{
+    display:inline-block;
+    padding:4px 10px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:600;
+    color:#fff;
+    width:fit-content;
+}
+
+/* High */
+
+.priority.high{
+    background:#ef4444;
+}
+
+/* Medium */
+
+.priority.medium{
+    background:#f59e0b;
+}
+
+/* Low */
+
+.priority.low{
+    background:#10b981;
+}
+
+/* =========================
+   Labels
+========================= */
+
+.labels{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+.label{
+    padding:4px 10px;
+    border-radius:20px;
+    font-size:12px;
+    color:white;
+}
+
+.label.blue{
+    background:#3b82f6;
+}
+
+.label.green{
+    background:#10b981;
+}
+
+.label.orange{
+    background:#f59e0b;
+}
+
+.label.red{
+    background:#ef4444;
+}
+
+.label.purple{
+    background:#8b5cf6;
+}
+
+/* =========================
+   Footer
+========================= */
+
+.card-footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:5px;
+}
+
+/* =========================
+   Action Buttons
+========================= */
+
+.card-actions{
+    display:flex;
+    gap:10px;
+}
+
+.card-actions button{
+    width:34px;
+    height:34px;
+    border:none;
+    border-radius:50%;
+    background:#f3f4f6;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.card-actions button:hover{
+    background:#e5e7eb;
+}
+
+.edit-btn{
+    color:#2563eb;
+}
+
+.delete-btn{
+    color:#dc2626;
+}
+
+/* =========================
+   Completed Card
+========================= */
+
+.card.completed{
+    opacity:.7;
+    border-left-color:#10b981;
+}
+
+.card.completed .card-title{
+    text-decoration:line-through;
+}
+
+/* =========================
+   Overdue
+========================= */
+
+.card.overdue{
+    border-left-color:#ef4444;
+}
+
+/* =========================
+   Dragging
+========================= */
+
+.card.dragging{
+    opacity:.5;
+    transform:rotate(3deg);
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+}
+
+/* =========================
+   Card Animation
+========================= */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.card{
+    animation:fadeIn .35s ease;
+}
+.card{
+    cursor: grab;
+}
+
+.card:active{
+    cursor: grabbing;
+}
+
+.card.dragging{
+    opacity:0.5;
+}
+
+.cards{
+    min-height:120px;
+}
+
+.cards.drag-over{
+    background:#dbeafe;
+    border-radius:10px;
+}
+
+.card{
+    transition:0.3s;
+}
+
+.card.search-match{
+    border:2px solid #3b82f6;
+}
+
+.card.dragging{
+
+    opacity:0.5;
+
+    transform:rotate(5deg);
+
+}
+
+.cards{
+
+    min-height:120px;
+
+}
+
+.cards:hover{
+
+    background:#f8fafc;
+
+}

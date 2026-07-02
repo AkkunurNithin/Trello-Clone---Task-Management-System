@@ -1,0 +1,166 @@
+
+/* Board Column */
+
+.list{
+    min-width:300px;
+    max-width:300px;
+    background:#eef2f7;
+    border-radius:12px;
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+
+   /* List Header */
+
+
+.list-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-bottom:10px;
+    border-bottom:2px solid #dbe4ee;
+}
+
+.list-header h3{
+    font-size:18px;
+    font-weight:600;
+    color:#1f2937;
+}
+
+/* Add Card Button */
+
+.addCardBtn{
+    width:35px;
+    height:35px;
+    border:none;
+    border-radius:50%;
+    background:#3b82f6;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.addCardBtn:hover{
+    background:#2563eb;
+    transform:scale(1.08);
+}
+
+/* =========================
+   Cards Container
+========================= */
+
+.cards{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    min-height:120px;
+    flex:1;
+}
+
+/* Empty State */
+
+.cards:empty::before{
+    content:"Drop tasks here";
+    color:#9ca3af;
+    font-size:14px;
+    text-align:center;
+    padding:25px 0;
+    border:2px dashed #cbd5e1;
+    border-radius:10px;
+}
+
+/* =========================
+   Hover Effect
+========================= */
+
+.list:hover{
+    transform:translateY(-2px);
+    transition:0.3s;
+}
+
+/* =========================
+   Drag Highlight
+========================= */
+
+.list.drag-over{
+    background:#dbeafe;
+    border:2px dashed #3b82f6;
+}
+
+/* =========================
+   List Footer (Optional)
+========================= */
+
+.list-footer{
+    margin-top:auto;
+}
+
+.list-footer button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    background:#f3f4f6;
+    cursor:pointer;
+    font-size:15px;
+    transition:0.3s;
+}
+
+.list-footer button:hover{
+    background:#e5e7eb;
+}
+
+/* =========================
+   List Actions
+========================= */
+
+.list-actions{
+    display:flex;
+    align-items:center;
+    gap:6px;
+}
+
+.list-actions button{
+
+    width:32px;
+    height:32px;
+
+    border:none;
+    border-radius:50%;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.rename-list{
+
+    background:#dbeafe;
+    color:#2563eb;
+
+}
+
+.delete-list{
+
+    background:#fee2e2;
+    color:#dc2626;
+
+}
+
+.rename-list:hover{
+
+    background:#bfdbfe;
+
+}
+
+.delete-list:hover{
+
+    background:#fecaca;
+
+}

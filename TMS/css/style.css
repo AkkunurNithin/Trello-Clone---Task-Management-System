@@ -1,0 +1,371 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* =========================
+   Reset
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#222;
+}
+
+/* =========================
+   Layout
+========================= */
+
+body{
+    display:flex;
+    min-height:100vh;
+}
+
+/* =========================
+   Sidebar
+========================= */
+
+.sidebar{
+    width:260px;
+    background:#1e2d42;
+    color:#fff;
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.logo h2{
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+#addBoardBtn{
+    border:none;
+    outline:none;
+    padding:14px;
+    border-radius:10px;
+    background:#3b82f6;
+    color:white;
+    cursor:pointer;
+    font-size:15px;
+    margin-bottom:25px;
+    transition:.3s;
+}
+
+#addBoardBtn:hover{
+    background:#2563eb;
+}
+
+.boards-list{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.board-item{
+    padding:12px;
+    background:#374151;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.board-item:hover{
+    background:#4b5563;
+}
+
+/* =========================
+   Main Content
+========================= */
+
+.main-content{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    padding:12px 16px;
+}
+
+/* =========================
+   Header
+========================= */
+/* =========================
+   Header
+========================= */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:12px;
+    gap:12px;
+}
+
+.header-left{
+    display:flex;
+    align-items:center;
+}
+
+.header-left h1{
+    font-size:30px;
+    font-weight:700;
+    color:#1f2937;
+}
+
+.header-right{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+header h1{
+    font-size:26px;
+    font-weight:700;
+    margin:0;
+}
+
+/* =========================
+   Search
+========================= */
+#searchInput{
+    width:300px;
+    padding:12px 18px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+#searchInput:focus{
+    border-color:#3b82f6;
+    box-shadow:0 0 8px rgba(59,130,246,.25);
+}
+#searchInput{
+    width:220px;
+    height:38px;
+    padding:0 12px;
+}
+#themeBtn{
+    width:38px;
+    height:38px;
+}
+/* 
+#searchInput{
+    width:260px;
+    padding:12px 16px;
+    border:none;
+    outline:none;
+    border-radius:8px;
+    background:white;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    font-size:15px;
+}
+
+#searchInput::placeholder{
+    color:#888;
+}
+
+/* =========================
+   Theme Button
+========================= */
+
+#themeBtn{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    background:white;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+    transition:.3s;
+} */
+
+#themeBtn:hover{
+    transform:rotate(20deg);
+}
+
+/* =========================
+   Board Area
+========================= */
+
+.board-container{
+    flex:1;
+    display:flex;
+    gap:12px;
+    overflow-x:auto;
+    padding-bottom:4px;
+}
+
+/* Scrollbar */
+
+.board-container::-webkit-scrollbar{
+    height:8px;
+}
+
+.board-container::-webkit-scrollbar-thumb{
+    background:#cbd5e1;
+    border-radius:10px;
+}
+
+/* =========================
+   Add List
+========================= */
+
+.add-list{
+    min-width:250px;
+    height:60px;
+}
+
+#addListBtn{
+    width:100%;
+    height:100%;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:#e2e8f0;
+    color:#374151;
+    font-size:16px;
+    transition:.3s;
+}
+
+#addListBtn:hover{
+    background:#cbd5e1;
+}
+
+/* =========================
+   Buttons
+========================= */
+
+button{
+    font-family:'Poppins',sans-serif;
+}
+
+/* =========================
+   Utility
+========================= */
+
+.hidden{
+    display:none;
+}
+
+.board-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.board-actions{
+    display:flex;
+    gap:8px;
+}
+
+.board-actions button{
+    border:none;
+    background:transparent;
+    color:white;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.board-actions button:hover{
+    color:#60a5fa;
+}
+
+.board-item.active{
+    background:#2563eb;
+}
+/* ==========================
+   Dark Mode
+========================== */
+
+body.dark{
+    background:#0f172a;
+    color:white;
+}
+
+body.dark .sidebar{
+    background:#111827;
+}
+
+body.dark .main-content{
+    background:#0f172a;
+}
+
+body.dark header h1{
+    color:white;
+}
+
+body.dark #searchInput{
+    background:#1e293b;
+    color:white;
+    border:1px solid #334155;
+}
+
+body.dark #searchInput::placeholder{
+    color:#94a3b8;
+}
+
+body.dark .list{
+    background:#1e293b;
+}
+
+body.dark .list-header h3{
+    color:white;
+}
+
+body.dark .card{
+    background:#334155;
+    color:white;
+}
+
+body.dark .card-title{
+    color:white;
+}
+
+body.dark .card-description{
+    color:#cbd5e1;
+}
+
+body.dark .card-date{
+    color:#cbd5e1;
+}
+
+body.dark .board-item{
+    background:#334155;
+}
+
+body.dark .board-item:hover{
+    background:#475569;
+}
+
+body.dark .board-item.active{
+    background:#2563eb;
+}
+
+body.dark .modal-content{
+    background:#1e293b;
+    color:white;
+}
+
+body.dark .modal-content input,
+body.dark .modal-content textarea,
+body.dark .modal-content select{
+    background:#334155;
+    color:white;
+    border:1px solid #475569;
+}
+
+body.dark #themeBtn{
+    background:#334155;
+    color:white;
+}

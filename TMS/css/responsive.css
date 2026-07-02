@@ -1,0 +1,209 @@
+/* ==========================================
+   Large Screens (1200px and below)
+========================================== */
+
+@media (max-width:1200px){
+
+    .board-container{
+        overflow-x:auto;
+    }
+
+}
+
+/* ==========================================
+   Tablets (992px and below)
+========================================== */
+
+@media (max-width:992px){
+
+    body{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+        height:auto;
+        padding:20px;
+    }
+
+    .boards-list{
+        flex-direction:row;
+        overflow-x:auto;
+        gap:10px;
+        padding-bottom:10px;
+    }
+
+    .board-item{
+        min-width:180px;
+        text-align:center;
+    }
+
+    .main-content{
+        padding:20px;
+    }
+
+    header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
+    }
+
+    .header-actions{
+        width:100%;
+    }
+
+    #searchInput{
+        width:100%;
+    }
+
+    .board-container{
+        padding-bottom:20px;
+    }
+
+}
+
+/* ==========================================
+   Mobile (768px and below)
+========================================== */
+
+@media (max-width:768px){
+
+    .logo h2{
+        font-size:24px;
+    }
+
+    header h1{
+        font-size:24px;
+    }
+
+    .list{
+        min-width:280px;
+        max-width:280px;
+    }
+
+    .modal-content{
+        width:95%;
+        padding:20px;
+    }
+
+    .modal-buttons{
+        flex-direction:column;
+    }
+
+    .modal-buttons button{
+        width:100%;
+    }
+
+    .card{
+        padding:12px;
+    }
+
+    .card-title{
+        font-size:16px;
+    }
+
+    .card-description{
+        font-size:13px;
+    }
+
+}
+
+/* ==========================================
+   Small Mobile (576px and below)
+========================================== */
+
+@media (max-width:576px){
+
+    .sidebar{
+        padding:15px;
+    }
+
+    .main-content{
+        padding:15px;
+    }
+
+    header{
+        gap:15px;
+    }
+
+    header h1{
+        font-size:22px;
+    }
+
+    .header-actions{
+        flex-direction:column;
+        width:100%;
+    }
+
+    #searchInput{
+        width:100%;
+    }
+
+    #themeBtn{
+        width:100%;
+        border-radius:8px;
+        height:45px;
+    }
+
+    .list{
+        min-width:250px;
+        max-width:250px;
+    }
+
+    .add-list{
+        min-width:250px;
+    }
+
+    .card-footer{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:12px;
+    }
+
+    .card-actions{
+        width:100%;
+        justify-content:flex-end;
+    }
+
+}
+
+/* ==========================================
+   Extra Small Devices (400px and below)
+========================================== */
+
+@media (max-width:400px){
+
+    .logo h2{
+        font-size:20px;
+    }
+
+    header h1{
+        font-size:20px;
+    }
+
+    .list{
+        min-width:220px;
+        max-width:220px;
+    }
+
+    .modal-content{
+        padding:15px;
+    }
+
+    .modal-content h2{
+        font-size:20px;
+    }
+
+    .modal-content input,
+    .modal-content textarea,
+    .modal-content select{
+        font-size:14px;
+        padding:10px;
+    }
+
+    .modal-buttons button{
+        padding:10px;
+        font-size:14px;
+    }
+
+}
