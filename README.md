@@ -190,7 +190,7 @@ Through this project, I improved my understanding of:
 
 **Akkunur Nithin**
 
-B.Tech – Computer Science & Engineering (Data Science)
+B.Tech – Computer Science & Engineering 
 
 Holy Mary Institute of Technology and Science
 
